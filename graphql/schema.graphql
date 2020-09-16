@@ -1,0 +1,7 @@
+#few specification on graphql
+#query: used when receiving data
+#mutation: used when updating data in server
+
+type Query{
+    name: String!
+}
