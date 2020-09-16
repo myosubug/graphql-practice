@@ -1,0 +1,13 @@
+{
+  "name": "graphql-practice",
+  "version": "1.0.0",
+  "description": "simple move api with graphql",
+  "main": "index.js",
+  "repository": "https://github.com/seanoh-untribe/graphql-practice.git",
+  "author": "Sean Oh <sean.oh@untribe.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
