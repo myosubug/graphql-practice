@@ -1,8 +1,14 @@
 //resolver resolves queries
 
+const sean = {
+    school: "ucalgary",
+    name: "sean"
+};
+
+
 const resolvers = {
     Query: {
-        name:() => "Sean"
+        person:() => sean
     }
 };
 
