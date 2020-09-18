@@ -1,4 +1,4 @@
-export const people = [
+let people = [
     {   
         id: 1,
         school: "ucalgary",
@@ -16,10 +16,13 @@ export const people = [
     }
 ];
 
+export const getPeople = () => people;
+
+
 export const getById = id =>{
     const filteredPeople = people.filter(person => person.id === id);
     return filteredPeople[0];
-}
+};
 
 export const addPerson = (name, school) => {
     const newPerson = {
@@ -29,4 +32,15 @@ export const addPerson = (name, school) => {
     }
     people.push(newPerson);
     return newPerson;
-}
+};
+
+
+export const deletePerson = id =>{
+    const deletingPerson = people.filter(people => people.id !== id);
+    if (people.length > deletingPerson.length) {
+        people = deletingPerson;
+        return true;
+    } else {
+        return false;
+    }
+};
