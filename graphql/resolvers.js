@@ -1,14 +1,12 @@
 //resolver resolves queries
 
-const sean = {
-    school: "ucalgary",
-    name: "sean"
-};
+import {people, getById} from "./db";
 
 
 const resolvers = {
     Query: {
-        person:() => sean
+        people: () => people,
+        person: (_, {id}) => getById(id)
     }
 };
 

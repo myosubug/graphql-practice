@@ -2,11 +2,13 @@
 #query: used when receiving data
 #mutation: used when updating data in server
 
-type Sean{
+type Person{
+    id: Int!
     school: String!
     name: String!
 }
 
 type Query{
-    person: Sean!
+    people: [Person]!
+    person(id: Int!): Person
 }
